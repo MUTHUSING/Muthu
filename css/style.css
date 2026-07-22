@@ -1177,4 +1177,8 @@ font-size:10px !important;
     font-size:14px;
     text-align:center;
   }
+  .hero-card{
+    min-height: 100% !important;
+    max-width: 100% !important;
+  }
 }
