@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muthu Krishnan M | Wordpress Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+
+  <!--Header  -->
+  <header class="topbar">
+    <div class="container navbar">
+      <a href="#" class="brand">
+        <div class="brand-logo">MK</div>
+        <div class="brand-text">
+          <h3>Muthu Krishnan M</h3>
+          <p>WordPress & Front-End Developer</p>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#footer">Blog</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-action">
+        <a href="#contact-strip" class="btn btn-primary talk-btn">Let's Talk</a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hello-badge">👋 Hello, I'm</div>
+          <h1>WordPress &<br>Front-End <span class="accent">Developer</span></h1>
+          <p>
+            I build responsive, fast and modern websites using WordPress,
+            Elementor and latest front-end technologies.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact-strip" class="btn btn-primary">Hire Me →</a>
+            <a href="#projects" class="btn btn-outline">View My Work →</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card">
+              <h4>3+</h4>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-card">
+              <h4>50+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-card">
+              <h4>30+</h4>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-card">
+              <h4>100%</h4>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <!-- <div class="floating-icon icon-wp">W</div>
+            <div class="floating-icon icon-html">HTML</div>
+            <div class="floating-icon icon-css">CSS</div>
+            <div class="floating-icon icon-js">JS</div>
+            <div class="floating-icon icon-el">E</div> -->
+
+            <div class="code-window">
+              <div class="window-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div>
+                <img src="./images/web-developer.jpg" alt="web-developer" style="border-radius:10px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="section-tag">What I Do</div>
+          <h2 class="section-title">My Services</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="cards-grid">
+          <div class="service-card">
+            <div class="service-icon blue">W</div>
+            <h3>WordPress Development</h3>
+            <p>Custom WordPress websites that are fast, secure and easy to manage.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon purple">&lt;/&gt;</div>
+            <h3>Front-End Development</h3>
+            <p>Modern, responsive and user-friendly interfaces using HTML, CSS and JS.</p>
+          </div>
+<div class="service-card">
+            <div class="service-icon violet">Woo</div>
+            <h3>WooCommerce Development</h3>
+            <p>Create powerful online stores that sell and grow your business.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon green">↗</div>
+            <h3>SEO Optimization</h3>
+            <p>Improve ranking and get more traffic through search engines.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon orange">⚡</div>
+            <h3>Speed Optimization</h3>
+            <p>Optimize website speed for better performance and user experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="section" id="projects">
+  <div class="container">
+    <div class="section-title-wrap">
+      <div class="section-tag">Recent Work</div>
+      <h2 class="section-title">My Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-top">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="business">Business</button>
+      <button class="filter-btn" data-filter="ecommerce">eCommerce</button>
+      <button class="filter-btn" data-filter="landing">Landing Page</button>
+      <button class="filter-btn" data-filter="react">React</button>
+      <button class="filter-btn" data-filter="site">Site Optimization</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://bhahubalitrust.org/" target="_blank"><img src="./images/trust.jpg" alt="Bhahubali Trust" style="border-radius:10px">
+               </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://bhahubalitrust.org/" target="_blank">Bhahubali Trust</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+
+       <article class="project-card" data-category="ecommerce">
+            <div class="project-thumb">
+              <span class="thumb-label">eCommerce</span>
+              <div class="mini-ui">
+                <a href="https://cultcollectivecarte.com/" target="_blank"><img src="./images/culturecult.jpg" alt="cultcollectivecarte" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://cultcollectivecarte.com/" target="_blank">Cultcollectivecarte</a></h3>
+              <p>eCommerce</p>
+            </div>
+          </article>
+
+      <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://indianbridalmakeup.com.au/" target="_blank"><img src="./images/magdalene.jpg" alt="Magdalene" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://indianbridalmakeup.com.au/" target="_blank">Magdalene Lash</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+
+      <article class="project-card" data-category="landing">
+            <div class="project-thumb">
+              <span class="thumb-label">Landing Page</span>
+              <div class="mini-ui">
+                 <a href="https://kumarankudil.com/" target="_blank"><img src="./images/kumaran-kudil.jpg" alt="Kumaran Kudil" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://kumarankudil.com/" target="_blank">Kumaran Kudil</a></h3>
+              <p>Landing Page</p>
+            </div>
+          </article>
+
+      <article class="project-card" data-category="site">
+            <div class="project-thumb">
+              <span class="thumb-label">Site Optimation</span>
+              <div class="mini-ui">
+                 <img src="./images/zorabuilder.jpg" alt="Zora builders" style="border-radius:10px">
+                
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Zorabuilders</h3>
+              <p>Site Optimation</p>
+            </div>
+          </article>
+      <article class="project-card" data-category="react">
+            <div class="project-thumb">
+              <span class="thumb-label">React</span>
+              <div class="mini-ui">
+                 <a href="https://myndwell.io/" target="_blank"><img src="./images/myndwell.jpg" alt="myndwell" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://myndwell.io/" target="_blank">Myndwell</a></h3>
+              <p>React</p>
+            </div>
+          </article>
+
+      <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://thecreatives360.ae/" target="_blank"><img src="./images/the-creative.jpg" alt="The Creative 360" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://thecreatives360.ae/" target="_blank">The creative 360</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="site">
+            <div class="project-thumb">
+              <span class="thumb-label">Site Optimation</span>
+              <div class="mini-ui">
+                 <img src="./images/aquatech.jpg" alt="Aquatech" style="border-radius:10px">
+                
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Aquatech</h3>
+              <p>Site Optimation</p>
+            </div>
+          </article>
+
+      <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://iil.edu.in/" target="_blank"><img src="./images/iil.jpg" alt="Institute" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://iil.edu.in/" target="_blank">IIL</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+
+      
+      <article class="project-card" data-category="ecommerce">
+            <div class="project-thumb">
+              <span class="thumb-label">Ecommerce</span>
+              <div class="mini-ui">
+                 <a href="https://racepro.co.in/" target="_blank"><img src="./images/race-pro.jpg" alt="Race Pro" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://racepro.co.in/" target="_blank">Race Pro</a></h3>
+              <p>Ecommerce</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="site">
+            <div class="project-thumb">
+              <span class="thumb-label">Site Optimation</span>
+              <div class="mini-ui">
+                 <img src="./images/aquatechjet.jpg" alt="Aquawater jet" style="border-radius:10px">
+                
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Aquawater Jetcutting</h3>
+              <p>Site Optimation</p>
+            </div>
+          </article>
+
+      <article class="project-card" data-category="landing">
+       <div class="project-thumb">
+              <span class="thumb-label">Landing Page</span>
+              <div class="mini-ui">
+                 <a href="https://aimastersuresh.com/" target="_blank"><img src="./images/learning-ai.jpg" alt="Learning Ai" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+        <div class="project-content">
+          <h3><a href="https://aimastersuresh.com/" target="_blank">Master Ai</a></h3>
+          <p>Landing Page</p>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://fascpro.secuvra.com/" target="_blank"><img src="./images/facspro.jpg" alt="Facspro" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://fascpro.secuvra.com/" target="_blank">Facs Pro</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+
+     <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://www.fourdots.co.in/" target="_blank"><img src="./images/four-dots.jpg" alt="Four Dots" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://www.fourdots.co.in/" target="_blank">Four Dots</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+
+      <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://www.pediatricsfrisco.com/" target="_blank"><img src="./images/pediatrics-frisco.jpg" alt="Pediatrics Frisco" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://www.pediatricsfrisco.com/" target="_blank">Pediatrics Frisco</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://kidsspeechtherapychennai.com/" target="_blank"><img src="./images/kids-pediatrics.jpg" alt="Kids Pediatrics" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://kidsspeechtherapychennai.com/" target="_blank">Kids Pediatrics</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://mindstrust.org/" target="_blank"><img src="./images/mindtrust.jpg" alt="Minds Trust" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://mindstrust.org/" target="_blank">Minds Trust</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="business">
+            <div class="project-thumb">
+              <span class="thumb-label">Business</span>
+              <div class="mini-ui">
+                 <a href="https://atelierr.design/" target="_blank"><img src="./images/atelierr-design.jpg" alt="Atelierr design" style="border-radius:10px">
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3><a href="https://atelierr.design/" target="_blank">Atelierr Design</a></h3>
+              <p>Business</p>
+            </div>
+          </article>
+    </div>
+
+    <div class="center-btn">
+  <button type="button" class="btn btn-primary" id="toggleProjectsBtn">
+    View More Projects →
+  </button>
+</div>
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+      <div class="container skills-wrap">
+        <div class="skill-box">
+          <div class="section-tag">My Skills</div>
+          <h2 style="font-size:36px; margin-bottom:22px;">Skills & Technologies</h2>
+
+          <div class="tech-icons">
+  <div class="tech-item"><span><img src="./images/html-5.png" alt="html5"></span><small>HTML5</small></div>
+  <div class="tech-item"><span><img src="./images/css-3.png" alt="css"></span><small>CSS3</small></div>
+  <div class="tech-item"><span><img src="./images/js.png" alt="js"></span><small>JavaScript</small></div>
+  <div class="tech-item"><span><img src="./images/atom.png" alt="react"></span><small>React</small></div>
+  <div class="tech-item"><span><img src="./images/logo.png" alt="Wordpress"></span><small>WordPress</small></div>
+  <div class="tech-item"><span><img src="./images/elementor.png" alt="elementor"></span><small>Elementor</small></div>
+  <div class="tech-item"><span><img src="./images/programing.png" alt="php"></span><small>PHP</small></div>
+  <div class="tech-item"><span><img src="./images/sass.png" alt="Sass"></span><small>Sass</small></div>
+</div>
+
+          <!-- <div class="skill-bar">
+            <div class="skill-bar-top"><strong>HTML</strong><span>95%</span></div>
+            <div class="progress"><span data-width="95%"></span></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-bar-top"><strong>CSS</strong><span>90%</span></div>
+            <div class="progress"><span data-width="90%"></span></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-bar-top"><strong>JavaScript</strong><span>85%</span></div>
+            <div class="progress"><span data-width="85%"></span></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-bar-top"><strong>PHP</strong><span>80%</span></div>
+            <div class="progress"><span data-width="80%"></span></div>
+          </div> -->
+        </div>
+
+        <div class="testimonial-box" id="testimonials">
+          <div class="testimonial-head">
+            <div>
+              <div class="section-tag">Clients Say</div>
+              <h2 style="font-size:36px;">Testimonials</h2>
+            </div>
+            <div class="slider-controls">
+              <button id="prevBtn">‹</button>
+              <button id="nextBtn">›</button>
+            </div>
+          </div>
+
+          <div class="testimonial-slide active">
+            <div class="client-row">
+              <div class="client-avatar">R</div>
+              <div>❝</div>
+            </div>
+            <p class="quote">
+              Muthu is an excellent developer. He delivered our website on time with great quality.
+              Communication was smooth and he understood our requirements perfectly.
+            </p>
+            <div class="client-meta">
+              <h4>Rakesh Kumar</h4>
+              <p>Founder, BuildTech Solutions</p>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="client-row">
+              <div class="client-avatar">S</div>
+              <div>❝</div>
+            </div>
+            <p class="quote">
+              Very professional and responsive. Our WooCommerce site is now faster,
+              cleaner and much easier for customers to use.
+            </p>
+            <div class="client-meta">
+              <h4>Swathi Priya</h4>
+              <p>Owner, Fresh Cart Store</p>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="client-row">
+              <div class="client-avatar">A</div>
+              <div>❝</div>
+            </div>
+            <p class="quote">
+              He created a modern landing page exactly as we wanted. The design looks premium
+              and the site performance improved a lot.
+            </p>
+            <div class="client-meta">
+              <h4>Arjun Dev</h4>
+              <p>Marketing Lead, Brand Spark</p>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="contact-strip" id="contact-strip">
+          <div class="contact-left">
+            <div class="contact-icon">✈</div>
+            <div>
+              <h3>Have a Project in Mind?</h3>
+              <p>Let's work together and create something amazing.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/9566971312" target="_blank" class="btn btn-outline">Contact Me →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom:14px;">
+            <div class="brand-logo footer-brnd">MK</div>
+            <div class="brand-text footer-brndtx">
+              <h3 style="font-size:20px;">Muthu Krishnan M</h3>
+              <p>WordPress & Front-End Developer</p>
+            </div>
+          </div>
+          <p>
+            Passionate about creating modern, fast and user-friendly websites.
+          </p>
+          
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-strip">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">WordPress Development</a></li>
+            <li><a href="#">Front-End Development</a></li>
+            <li><a href="#">Elementor Development</a></li>
+            <li><a href="#">WooCommerce Development</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>📍 Villupuram, Tamil Nadu</li>
+            <li>📞 +91 9566971312</li>
+            <li>✉ mrkrish003@gmail.com</li>
+            
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get latest updates and offers.</p>
+          <form class="newsletter" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">➜</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Muthu Krishnan M. All Rights Reserved.</p>
+        <p>Designed with ❤️ by Muthu Krishnan M</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const allProjectCards = document.querySelectorAll('.project-card');
+  const toggleProjectsBtn = document.getElementById('toggleProjectsBtn');
+
+  let activeFilter = 'all';
+  let defaultCount = 6;
+  let step = 3;
+  let visibleCount = defaultCount;
+
+  function getFilteredCards() {
+    return [...allProjectCards].filter(card => {
+      return activeFilter === 'all' || card.dataset.category === activeFilter;
+    });
+  }
+
+  function updateProjects(animateNew = false, startIndex = 0) {
+    const filteredCards = getFilteredCards();
+
+    allProjectCards.forEach(card => {
+      card.classList.add('hide-project');
+      card.classList.remove('show-effect');
+    });
+
+    filteredCards.forEach((card, index) => {
+      if (index < visibleCount) {
+        card.classList.remove('hide-project');
+
+        if (animateNew && index >= startIndex) {
+          setTimeout(() => {
+            card.classList.add('show-effect');
+          }, (index - startIndex) * 120);
+        }
+      }
+    });
+
+    if (filteredCards.length <= defaultCount) {
+      toggleProjectsBtn.style.display = 'none';
+    } else {
+      toggleProjectsBtn.style.display = 'inline-flex';
+
+      if (visibleCount >= filteredCards.length) {
+        toggleProjectsBtn.textContent = 'Less Projects';
+      } else {
+        toggleProjectsBtn.textContent = 'View More Projects →';
+      }
+    }
+  }
+
+  function setDefaultAllActive() {
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+    const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+    if (allBtn) {
+      allBtn.classList.add('active');
+    }
+  }
+
+  setDefaultAllActive();
+  updateProjects(false, 0);
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      activeFilter = button.dataset.filter;
+      visibleCount = defaultCount;
+
+      updateProjects(false, 0);
+    });
+  });
+
+  toggleProjectsBtn.addEventListener('click', () => {
+    const filteredCards = getFilteredCards();
+
+    if (visibleCount >= filteredCards.length) {
+      visibleCount = defaultCount;
+      updateProjects(false, 0);
+
+      document.getElementById('projects').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    } else {
+      const oldVisibleCount = visibleCount;
+      visibleCount += step;
+
+      if (visibleCount > filteredCards.length) {
+        visibleCount = filteredCards.length;
+      }
+
+      updateProjects(true, oldVisibleCount);
+    }
+  });
+
+
+  
+</script>
+<script>
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  if (slides.length && prevBtn && nextBtn) {
+    let currentSlide = 0;
+    let autoSlide;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlideFunc() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function startAutoSlide() {
+      autoSlide = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoSlide() {
+      clearInterval(autoSlide);
+      startAutoSlide();
+    }
+
+    prevBtn.addEventListener('click', () => {
+      prevSlideFunc();
+      resetAutoSlide();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlide();
+    });
+
+    showSlide(currentSlide);
+    startAutoSlide();
+  }
+</script>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  menuToggle.addEventListener('click', function () {
+    navLinks.classList.toggle('mobile-open');
+  });
+
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function () {
+      navLinks.classList.remove('mobile-open');
+    });
+  });
+</script>
+<!-- Paste WhatsApp button here -->
+  <a href="https://wa.me/919566971312?text=Hello%20Muthu,%20I%20want%20to%20discuss%20a%20project."
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+      <path fill="currentColor" d="M19.11 17.21c-.29-.15-1.69-.83-1.95-.92-.26-.1-.45-.15-.64.15-.19.29-.73.92-.9 1.11-.16.19-.33.22-.62.08-.29-.15-1.22-.45-2.32-1.43-.86-.76-1.44-1.69-1.61-1.98-.17-.29-.02-.45.13-.59.13-.13.29-.33.43-.49.14-.16.19-.28.29-.47.1-.19.05-.36-.02-.5-.08-.15-.64-1.55-.88-2.13-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.98 2.44.02 1.44 1.02 2.83 1.16 3.03.15.19 2.01 3.08 4.98 4.2.7.3 1.25.48 1.68.61.71.23 1.36.2 1.87.12.57-.08 1.69-.69 1.93-1.35.24-.67.24-1.24.17-1.35-.07-.11-.26-.18-.55-.32Z"/>
+      <path fill="currentColor" d="M16.03 3.2c-7.07 0-12.8 5.72-12.8 12.78 0 2.26.6 4.46 1.73 6.4L3 29l6.84-1.79a12.8 12.8 0 0 0 6.18 1.58h.01c7.06 0 12.78-5.73 12.78-12.79 0-3.42-1.33-6.63-3.76-9.05A12.7 12.7 0 0 0 16.03 3.2Zm0 23.43h-.01a10.64 10.64 0 0 1-5.43-1.49l-.39-.23-4.06 1.06 1.08-3.96-.25-.41a10.57 10.57 0 0 1-1.62-5.62c0-5.88 4.79-10.67 10.68-10.67 2.85 0 5.53 1.11 7.54 3.12a10.58 10.58 0 0 1 3.12 7.54c0 5.89-4.79 10.68-10.66 10.68Z"/>
+    </svg>
+  </a>
+</body>
+</html>
