@@ -1182,3 +1182,84 @@ font-size:10px !important;
     max-width: 100% !important;
   }
 }
+/* ==========================================
+   SMOOTH MOTION + ANIMATED WAVE BACKGROUND
+   Added without removing existing styles.
+========================================== */
+:root { --motion-ease: cubic-bezier(.22, 1, .36, 1); }
+body { overflow-x: hidden; isolation: isolate; }
+
+/* Soft animated glow behind the whole page */
+body::before {
+  content: ""; position: fixed; inset: -20%; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse at 15% 20%, rgba(59,130,246,.16), transparent 34%),
+              radial-gradient(ellipse at 80% 30%, rgba(217,70,239,.12), transparent 30%),
+              radial-gradient(ellipse at 55% 85%, rgba(139,92,246,.10), transparent 34%);
+  background-size: 140% 140%; animation: ambientGlow 18s ease-in-out infinite alternate;
+  will-change: background-position, transform;
+}
+@keyframes ambientGlow {
+  0% { background-position: 0% 0%; transform: scale(1); }
+  50% { background-position: 70% 35%; transform: scale(1.04); }
+  100% { background-position: 100% 80%; transform: scale(1); }
+}
+
+/* Keep the existing hero background image and add a moving wave overlay */
+.hero {
+  position: relative; isolation: isolate; overflow: hidden;
+  background-size: cover; background-position: center;
+  animation: heroImageDrift 24s ease-in-out infinite alternate;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(115deg, rgba(5,9,24,.48), rgba(5,9,24,.10) 55%, rgba(5,9,24,.35)),
+              radial-gradient(circle at 75% 35%, rgba(91,119,255,.16), transparent 36%);
+}
+.hero::after {
+  content: ""; position: absolute; z-index: 0; pointer-events: none;
+  left: -10%; right: -10%; bottom: -2px; height: clamp(70px, 10vw, 140px);
+  background-repeat: repeat-x; background-size: 1200px 100%; opacity: .9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 140' preserveAspectRatio='none'%3E%3Cpath d='M0 65 C150 130 300 0 450 65 S750 130 900 65 S1050 0 1200 65 L1200 140 L0 140 Z' fill='%230b1123' fill-opacity='.72'/%3E%3Cpath d='M0 90 C180 30 300 140 480 82 S780 30 960 82 S1080 120 1200 80 L1200 140 L0 140 Z' fill='%23070b1a' fill-opacity='.82'/%3E%3C/svg%3E");
+  animation: waveDrift 16s linear infinite;
+}
+@keyframes waveDrift { from { background-position-x: 0; } to { background-position-x: 1200px; } }
+@keyframes heroImageDrift { 0% { background-position: 48% 50%; } 100% { background-position: 52% 50%; } }
+.hero > .container { position: relative; z-index: 1; }
+
+/* Gentle entrance motion for hero content */
+.hero-content > * { animation: enterUp .8s var(--motion-ease) both; }
+.hero-content > *:nth-child(1) { animation-delay: .08s; }
+.hero-content > *:nth-child(2) { animation-delay: .16s; }
+.hero-content > *:nth-child(3) { animation-delay: .24s; }
+.hero-content > *:nth-child(4) { animation-delay: .32s; }
+.hero-content > *:nth-child(5) { animation-delay: .40s; }
+.hero-visual { animation: enterRight 1s var(--motion-ease) .18s both; }
+@keyframes enterUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes enterRight { from { opacity: 0; transform: translateX(28px) scale(.98); } to { opacity: 1; transform: translateX(0) scale(1); } }
+
+/* Smooth hover transitions */
+.btn, .filter-btn, .menu-toggle, .slider-controls button, .nav-links a,
+.footer-col a, .tech-item, .stat-card, .service-card, .project-card,
+.hero-card, .contact-icon, .whatsapp-float {
+  transition: transform .35s var(--motion-ease), box-shadow .35s ease,
+              border-color .35s ease, background-color .35s ease, color .25s ease;
+}
+.btn-primary:hover { transform: translateY(-4px); box-shadow: 0 16px 38px rgba(139,92,246,.34); }
+.btn-outline:hover { transform: translateY(-3px); border-color: rgba(126,166,255,.55); }
+.service-card:hover, .project-card:hover { transform: translateY(-8px); box-shadow: 0 24px 55px rgba(0,0,0,.42); }
+.tech-item:hover, .stat-card:hover { transform: translateY(-5px); border-color: rgba(126,166,255,.35); box-shadow: 0 14px 32px rgba(59,130,246,.12); }
+.brand-logo { transition: transform .4s var(--motion-ease), filter .4s ease; }
+.brand:hover .brand-logo { transform: rotate(-7deg) scale(1.06); filter: drop-shadow(0 0 12px rgba(91,119,255,.35)); }
+.project-thumb img { transition: transform .7s var(--motion-ease), filter .5s ease; }
+.project-card:hover .project-thumb img { transform: scale(1.055); filter: saturate(1.08); }
+.hero-card { animation: cardFloat 7s ease-in-out infinite; }
+@keyframes cardFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.hero-card::before, .hero-card::after { animation: glowPulse 7s ease-in-out infinite alternate; }
+@keyframes glowPulse { from { opacity: .55; transform: scale(.92); } to { opacity: 1; transform: scale(1.12); } }
+
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #8b9cff; outline-offset: 4px; }
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
